@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAgina principal</title>
+    <title>Custom Elements</title>
     <link rel="stylesheet" href="css/main.css">    
-
+    <script type="module" src="src/my-element.js"></script>
+    <script type="module" src="src/basic-component.js"></script>
+    
 </head>
 <body>
     <!-- Uso de etiquetas semanticas -->
@@ -28,7 +30,26 @@
         </nav>
 
     </header>
-    <main>    
+    <main>
+        <section>
+            <basic-component>Content slot: Texto dado en el html</basic-component>
+        </section>
+        <section class="main-logo">
+            <img src="" alt="">
+        </section>
+        <section class="main-input">
+            <div class="main-input-contaier">
+                <span class="search-icon">                    
+                </span>
+                <input type="text"> 
+                <a class="micro-icon" href=""></a>
+            </div>
+        </section>
+        <section class="main-buttons">
+            <div><button>Buscar con Google</button></div>
+            <div><button>ME siento con suerte</button></div>
+        </section>
+        
                     
     </main>
     <footer>    
